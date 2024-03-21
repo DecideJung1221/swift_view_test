@@ -23,20 +23,45 @@ struct ContentView: View {
                            
             
             VStack{
-                Text("날짜를 선택하세요")
-                    .font(.title2)
-                    .offset(y:10)
-                DatePicker("date"
-                           ,
-                           selection: $date,
-                           displayedComponents: [.date]
-                )
-                .padding()
-                .background(.blue)
-                .cornerRadius(15)
-                .padding()
+                Image("MOA_mini").padding()
+                
+                HStack{
+                    
+                    HStack{
+                        
+                        Image(systemName: "calendar.badge.plus")
+//                        Text("날짜를 선택하세요")
+                    }
+                    
+                    .font(.title)
+                    .foregroundColor(Color.black)
+                    .offset(x:10)
+                    
+                    
+                    DatePicker("날짜를 선택하세요"
+                               ,
+                               selection: $date,
+                               displayedComponents: [.date]
+                    )
+                    .padding()
+                    .background(.blue)
+                    .cornerRadius(15)
+                    .padding()
+                }
                 Spacer()
-                Text("랜덤사람")
+                
+                
+                Image("stranger")
+                
+                //모아 캐릭터
+                VStack{
+                    Image("newView_star")
+                        .offset(x:40,y:30)
+                    Image("newView_human")
+                    Image("MOA_mini")
+                }
+                .offset(x:-110,y:-30)
+                
             }
 //            if showDetail {
 //                DetailView(showDetail: self.$showDetail)
