@@ -9,7 +9,13 @@ import SwiftUI
 
 struct testView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            
+            
+            
+            Color(#colorLiteral(red: 0.8106445074081421, green: 0.9772773385047913, blue: 1, alpha: 1)).ignoresSafeArea()
+            Text("Hello, World!")
+        }
     }
 }
 

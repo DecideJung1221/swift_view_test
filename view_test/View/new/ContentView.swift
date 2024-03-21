@@ -24,18 +24,14 @@ struct ContentView: View {
             
             VStack{
                 Image("MOA_mini").padding()
+                    .offset(y:80)
                 
                 HStack{
-                    
-                    HStack{
-                        
                         Image(systemName: "calendar.badge.plus")
-//                        Text("날짜를 선택하세요")
-                    }
                     
                     .font(.title)
                     .foregroundColor(Color.black)
-                    .offset(x:10)
+                    .offset(x:15)
                     
                     
                     DatePicker("날짜를 선택하세요"
@@ -48,10 +44,21 @@ struct ContentView: View {
                     .cornerRadius(15)
                     .padding()
                 }
-                Spacer()
+                .offset(y:50)
+                
+                
+                // 말풍성
+                ZStack{
+                    Image("newView_p")
+                        .resizable()
+                        .frame(width: 300, height: 250)
+                    
+                    Text("흰옷을 입은 사람")
+                }    .offset(y:60)
                 
                 
                 Image("stranger")
+                    .offset(x:20,y:80)
                 
                 //모아 캐릭터
                 VStack{
@@ -60,7 +67,7 @@ struct ContentView: View {
                     Image("newView_human")
                     Image("MOA_mini")
                 }
-                .offset(x:-110,y:-30)
+                .offset(x:-110,y:-100)
                 
             }
 //            if showDetail {
