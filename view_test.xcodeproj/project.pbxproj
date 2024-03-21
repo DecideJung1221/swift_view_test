@@ -20,6 +20,8 @@
 		98252B942BABC0A3006A227E /* OnboardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252B932BABC0A3006A227E /* OnboardingButtonStyle.swift */; };
 		98252B962BABC1A6006A227E /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252B952BABC1A6006A227E /* tabView.swift */; };
 		98252B982BABD4AE006A227E /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252B972BABD4AE006A227E /* mainView.swift */; };
+		98252B9D2BAC1246006A227E /* themeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252B9C2BAC1246006A227E /* themeView.swift */; };
+		98252B9F2BAC1318006A227E /* contentTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252B9E2BAC1318006A227E /* contentTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		98252B932BABC0A3006A227E /* OnboardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingButtonStyle.swift; sourceTree = "<group>"; };
 		98252B952BABC1A6006A227E /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
 		98252B972BABD4AE006A227E /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		98252B9C2BAC1246006A227E /* themeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = themeView.swift; sourceTree = "<group>"; };
+		98252B9E2BAC1318006A227E /* contentTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,8 @@
 			children = (
 				98252B8C2BABBA42006A227E /* DetailView.swift */,
 				98252B622BABBA0D006A227E /* ContentView.swift */,
+				98252B9C2BAC1246006A227E /* themeView.swift */,
+				98252B9E2BAC1318006A227E /* contentTestView.swift */,
 			);
 			path = new;
 			sourceTree = "<group>";
@@ -309,12 +315,14 @@
 			files = (
 				98252B632BABBA0D006A227E /* ContentView.swift in Sources */,
 				98252B982BABD4AE006A227E /* mainView.swift in Sources */,
+				98252B9F2BAC1318006A227E /* contentTestView.swift in Sources */,
 				98252B912BABBACC006A227E /* testView.swift in Sources */,
 				98252B8D2BABBA42006A227E /* DetailView.swift in Sources */,
 				98252B8F2BABBA5D006A227E /* ModalView.swift in Sources */,
 				98252B962BABC1A6006A227E /* tabView.swift in Sources */,
 				98252B942BABC0A3006A227E /* OnboardingButtonStyle.swift in Sources */,
 				98252B612BABBA0D006A227E /* view_testApp.swift in Sources */,
+				98252B9D2BAC1246006A227E /* themeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
