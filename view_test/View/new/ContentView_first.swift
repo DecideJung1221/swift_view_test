@@ -1,5 +1,5 @@
 //
-//  contentTestView.swift
+//  ContentView.swift
 //  view_test
 //
 //  Created by 정혜정 on 3/21/24.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct contentTestView: View {
+
+struct ContentView_first: View {
     @State var showDetail = false
     @State var date = Date()
     
@@ -16,11 +17,15 @@ struct contentTestView: View {
         
         ZStack {
             
+            
+            
             Color(#colorLiteral(red: 0.8106445074081421, green: 0.9772773385047913, blue: 1, alpha: 1)).ignoresSafeArea()
                            
             
             VStack{
                 Image("MOA_mini").padding()
+                    .offset(y:80)
+                
                 HStack{
                         Image(systemName: "calendar.badge.plus")
                     
@@ -39,48 +44,35 @@ struct contentTestView: View {
                     .cornerRadius(15)
                     .padding()
                 }
+                .offset(y:50)
                 
-                Spacer()
+                
                 // 말풍선
                 ZStack{
                     Image("newView_p")
                         .resizable()
-                        .frame(width: 300, height: 300)
+                        .frame(width: 300, height: 250)
                     
                     Text("흰옷을 입은 사람")
-                }
+                }    .offset(y:60)
                 
-                Spacer()
                 
-                HStack(spacing:10){
-                    
-                    
-                    HStack(alignment: .top, content: {
-                        //모아 캐릭터
-                        VStack{
-                            Image("newView_human")
-                            Image("MOA_mini")
-                        }
-                        Image("newView_star")
-                    })
-                    .padding()
-                    //stranger
-                    VStack{
-                        Image("stranger")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 150,height: 150,alignment: .topTrailing)
-                        Text("Skip")
-                            .bold()
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,alignment: .bottom)
-                        
-//                        Image("skip")
-//                            .resizable()
-//                            .frame(width: 50,height: 30,alignment: .bottom)
-                    }
-                    .offset(x: -60, y: -60)
+                //stranger
+                VStack{
+                    Image("stranger")
+//
+                    Image("skip")
+                }.offset(x:20,y:80)
+                
+                //모아 캐릭터
+                VStack{
+                    Image("newView_star")
+                        .offset(x:40,y:30)
+                    Image("newView_human")
+                    Image("MOA_mini")
                 }
-                .offset(x: -10)
+                .offset(x:-110,y:-100)
+                
             }
 //            if showDetail {
 //                DetailView(showDetail: self.$showDetail)
@@ -92,7 +84,7 @@ struct contentTestView: View {
 //                        Text("Show Detail View")
 //                    }
 //                }
-//
+//             
 //            }
             
 //            TabView {
@@ -106,6 +98,7 @@ struct contentTestView: View {
     }
 }
 
+
 #Preview {
-    contentTestView()
+    ContentView()
 }
