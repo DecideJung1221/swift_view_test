@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showDetail = false
+//    @State var showDetail = false
+    @State var showWrite = false
     @State var date = Date()
     
     var body: some View {
@@ -17,6 +18,9 @@ struct ContentView: View {
         ZStack {
             
             Color(#colorLiteral(red: 0.8106445074081421, green: 0.9772773385047913, blue: 1, alpha: 1)).ignoresSafeArea()
+        if showWrite {
+            writeView(showWrite: self.$showWrite)
+        } else {
             
             
             VStack{
@@ -52,6 +56,7 @@ struct ContentView: View {
                     .font(.custom("Papyrus", size: 30))
                     .padding()
                 
+                
                 ZStack{
                     
                     RoundedRectangle(cornerRadius: 50)
@@ -80,15 +85,22 @@ struct ContentView: View {
                             })
                             .padding()
                             
-                            //선택
-                            Button(action: {
-                                print("select")
-                            }, label: {
-                                Image(systemName: "checkmark.circle")
-                                    .imageScale(.medium)
-                                    .font(.largeTitle)
-                            })
-                            .padding()
+                            
+                                Button(action: {
+                                    self.showWrite = true
+                                    print("select")
+                                },  label: {
+                                    
+                                    
+                                    
+                                    Image(systemName: "checkmark.circle")
+                                        .imageScale(.medium)
+                                        .font(.largeTitle)
+                                })
+                                .padding()
+                                
+                            
+                            
                             
                             
                             //다시
@@ -177,6 +189,12 @@ struct ContentView: View {
                 //                    .tabItem {
                 //                        Label("Received", systemImage: "tray.and.arrow.down.fill")
                 //                    }
+                ///////////////////////////////////////////////////////////
+                
+                
+                    
+                }
+                
             }
         }
         
