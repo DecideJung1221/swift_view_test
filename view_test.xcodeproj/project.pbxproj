@@ -24,6 +24,7 @@
 		98252B9F2BAC1318006A227E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252B9E2BAC1318006A227E /* ContentView.swift */; };
 		98252BA12BAC4831006A227E /* writeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252BA02BAC4831006A227E /* writeView.swift */; };
 		98252BA32BAC5476006A227E /* writeAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252BA22BAC5476006A227E /* writeAllView.swift */; };
+		98252BDE2BAD0982006A227E /* ImagePiker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98252BDD2BAD0982006A227E /* ImagePiker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		98252B9E2BAC1318006A227E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98252BA02BAC4831006A227E /* writeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeView.swift; sourceTree = "<group>"; };
 		98252BA22BAC5476006A227E /* writeAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeAllView.swift; sourceTree = "<group>"; };
+		98252BDD2BAD0982006A227E /* ImagePiker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePiker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		98252B992BABE1C6006A227E /* new */ = {
 			isa = PBXGroup;
 			children = (
+				98252BDC2BAD0941006A227E /* photo */,
 				98252B8C2BABBA42006A227E /* DetailView.swift */,
 				98252B622BABBA0D006A227E /* ContentView_first.swift */,
 				98252B9C2BAC1246006A227E /* themeView.swift */,
@@ -187,6 +190,14 @@
 			children = (
 			);
 			path = show;
+			sourceTree = "<group>";
+		};
+		98252BDC2BAD0941006A227E /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				98252BDD2BAD0982006A227E /* ImagePiker.swift */,
+			);
+			path = photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 				98252B912BABBACC006A227E /* testView.swift in Sources */,
 				98252B8D2BABBA42006A227E /* DetailView.swift in Sources */,
 				98252B8F2BABBA5D006A227E /* ModalView.swift in Sources */,
+				98252BDE2BAD0982006A227E /* ImagePiker.swift in Sources */,
 				98252BA32BAC5476006A227E /* writeAllView.swift in Sources */,
 				98252B962BABC1A6006A227E /* tabView.swift in Sources */,
 				98252B942BABC0A3006A227E /* OnboardingButtonStyle.swift in Sources */,

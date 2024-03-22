@@ -9,25 +9,48 @@ import SwiftUI
 
 struct writeAllView: View {
     @Binding var showAllWrite: Bool
+    @State private var openPhoto = false
+    @State private var image = UIImage()
     
     var body: some View {
         ZStack{
             
             Color(#colorLiteral(red: 0.8106445074081421, green: 0.9772773385047913, blue: 1, alpha: 1)).ignoresSafeArea()
-            
-            HStack{
-                Button(action: {
-                    self.showAllWrite = false
-                }) {
-                    Text("back")
-                        .frame(width: 300, alignment: .leading)
+            VStack{
+                HStack{
+                    Button(action: {
+                        self.showAllWrite = false
+                    }) {
+                        Text("back")
+                            .frame(width: 300, alignment: .leading)
+                    }
+                    
                 }
                 
+                //사진
+                NavigationView {
+                    VStack {
+                        Image(uiImage: self.image)
+                            .resizable()
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                    }
+                    .navigationBarTitle("사진", displayMode: .inline)
+                        .navigationBarItems(trailing:
+                                Button(action: {
+                                    self.openPhoto = true
+                                }) {
+                                    Text("사진 추가")
+                                    }
+                        )
+                }
+                .sheet(isPresented: $openPhoto) {
+                    ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+                }
+                
+                
+                
+                Text("기록")
             }
-            
-            Text("사진")
-            Text("기록")
-            
         }
     }
 }
